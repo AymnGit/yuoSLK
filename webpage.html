@@ -8,29 +8,48 @@
   </head>
   <body>
     <style type="text/css">
-      .box1 {
-        text-align : center;
-        padding : 20px;
-        width : 300;
-        background : #2ec986;
-      }
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+}
 
-      .box1 h2 {
+
+.content {
+position: absolute;
+
+background: rgba(0, 0, 0, 0.5);
+color: #f1f1f1;
+width: 100%;
+padding: 20px;
+font-family: 'Archivo' , sans-serif;
+text-align: center;
+}
+
+      .content h2 {
         color : #1f6b4a;
         font-family : 'Archivo' , sans-serif;
       }
 
-      .box1 p {
+      .content p {
         color : #1f6b4a;
         font-family : 'Archivo' , sans-serif;
       }
     </style>
-    <div class="box1">
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+  <source src="src/bg-WHC.mp4" type="video/mp4">
+  </video>
+
+    <div class="content">
       <h2>Who is the coder?</h2>
       <p>It's me , a y m n <br /><br />
         Github : github.com/AymnGit<br />
         Codepen : codepen.io/zonehaxor
       </p>
     </div>
+
   </body>
 </html>
